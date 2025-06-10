@@ -1,0 +1,5 @@
+before_install:
+  - yes | sdkmanager "platforms;android-21"
+
+install:
+  - ./mvnw -B -ntp --file pom.xml clean package -Dandroid -e
