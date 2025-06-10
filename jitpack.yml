@@ -1,6 +1,6 @@
 before_install:
-  - apt-get update
-  - apt-get install -y cmake
+  - sudo apt-get update
+  - sudo apt-get install -y cmake
   - yes | sdkmanager "platforms;android-21"
 
 install:
