@@ -61,7 +61,7 @@ public final class QuicChannelBootstrap {
      *
      * @param parent    the {@link Channel} that is used as the transport layer.
      */
-    QuicChannelBootstrap(Channel parent) {
+    public QuicChannelBootstrap(Channel parent) {
         Quic.ensureAvailability();
         this.parent = ObjectUtil.checkNotNull(parent, "parent");
     }
